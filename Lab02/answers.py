@@ -73,14 +73,14 @@ for n in n_values:
         X.append(x)
 
     sorted_Y = np.sort(X)
-    y_val = np.arange(len(sorted_Y))/float(len(sorted_Y) - 1)
+    y_val = np.arange(len(sorted_Y))/float(len(sorted_Y))
 
     plt.title(f'Distribution Function for n = {n}')
     plt.ylabel('Probability : P(X <= x)')
     plt.xlabel('X')
     plt.plot(sorted_Y, y_val, color='blue')
-    plt.savefig("q2b n = "+ str(n))
-    # plt.show()
+    # plt.savefig("q2b n = "+ str(n))
+    plt.show()
 
     print("Sample Size = ", n)
     print("Mean =", np.mean(X))
@@ -97,7 +97,7 @@ plt.plot(x, Fx, color='green')
 plt.title('Actual Distribution Function')
 plt.ylabel('F(x) ')
 plt.xlabel('x')
-plt.savefig("q2d")
+# plt.savefig("q2d")
 plt.show()
 
 print("Theoretical Mean =", theta)
@@ -124,8 +124,8 @@ def temp(n):
     plt.ylabel('Probability - P(X <= x)')
     plt.xlabel('X (generated values)')
     plt.plot(sorted_Y, y_val, color='blue')
-    plt.savefig('q3b n = ' + str(n))
-    #   plt.show()
+    # plt.savefig('q3b n = ' + str(n))
+    # plt.show()
     
     print("Sample Size = ", n)
     print("Mean = ", np.mean(X))

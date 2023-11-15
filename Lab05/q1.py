@@ -2,8 +2,6 @@ import numpy as np
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import math
-import scipy.stats
-from scipy.stats import multivariate_normal
 
 
 def box_muller(n):
